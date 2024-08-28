@@ -216,6 +216,10 @@
                 }, 1000);
             });
         });
+        window.addEventListener('pageshow', function(event) {
+            const container = document.getElementById('main-container');
+            container.classList.remove('fade-out');
+        });
     </script>
 </body>
 </html>
