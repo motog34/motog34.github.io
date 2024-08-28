@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Information Center</title>
+    <style>
+        @font-face {
+            font-family: 'ProductSans-Bold';
+            src: url('https://motog34.github.io/font/Product_Bold.ttf') format('truetype');
+        }
+
+        @font-face {
+            font-family: 'ProductSans-Regular';
+            src: url('https://motog34.github.io/font/Product_Regular.ttf') format('truetype');
+        }
+
+        body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            overflow: auto; 
+        }
+
+        body {
+            font-family: 'ProductSans-Regular', sans-serif;
+            background-color: #121318;
+            color: #dee0ff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 0 1em; 
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 500px; 
+            width: 100%;
+        }
+
+        img.banner {
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+            border-radius: 0px; 
+            margin-bottom: 0.4em; 
+            margin-top: 2em; 
+            opacity: 0;
+            animation: fadeInDown 0.5s ease-out forwards 0.6s; 
+        }
+
+        h1, p {
+            text-align: left;
+            margin: 0;
+            padding: 0;
+            width: 100%; 
+            max-width: 100%;
+            opacity: 0; 
+            animation: fadeInDown 0.5s ease-out forwards;
+        }
+
+        h1 {
+            font-family: 'ProductSans-Bold', sans-serif;
+            font-size: 2em;
+            margin: 0em 0 0em 0em; 
+            line-height: 1.2;
+            animation-delay: 0s; 
+        }
+
+        p {
+            font-family: 'ProductSans-Regular', sans-serif;
+            font-size: 0.8em;
+            margin: 1.1em 0 0em 0em;
+            color: #dee0ff;
+            line-height: 0.1;
+            width: 103%;
+            animation: fadeInDown 0.5s ease-out forwards 0.3s;
+        }
+
+        .button-container {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5em;
+            width: 100%;
+            max-width: 400px;
+            opacity: 0; 
+            animation: fadeInDown 0.5s ease-out forwards 0.9s; 
+        }
+
+        .button-container button {
+            padding: 1.25em;
+            font-size: 1.05em;
+            font-family: 'ProductSans-Regular', sans-serif;
+            border: none;
+            border-radius: 23px;
+            background-color: #222c61;
+            color: #bac3ff;
+            cursor: pointer;
+            text-align: left; 
+            display: flex;
+            justify-content: space-between; 
+            align-items: center;
+            transition: background-color 0.5s ease, transform 0.3s ease, box-shadow 0.3s ease;
+            outline: none; 
+            box-shadow: none; 
+        }
+
+        .button-container button:hover,
+        .button-container button:focus-visible {
+            background-color: #3245a9;
+            transform: translateY(-5px); 
+            box-shadow: 0 4px 8px rgba(34, 44, 97); 
+        }
+
+        .button-container button img {
+            margin-left: auto;
+            filter: invert(21%) sepia(94%) saturate(642%) hue-rotate(185deg) brightness(98%) contrast(88%);
+        }
+
+        .button-container hr {
+            border: 0;
+            height: 1.9px;
+            background-color: #2f323f;
+            width: 15%;
+            margin: 0.5em auto;
+            border-radius: 50px;
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(+50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <br><br><h1>Welcome to the</h1>
+        <h1>Moto G34 5G</h1>
+        <h1>information center</h1>
+        <p>A place designed to store useful</p>
+        <p>information to help you make the most of</p>
+        <p>your device.</p><br>
+        <img src="https://raw.githubusercontent.com/motog34/motog34.github.io/main/banner/hbanner.png" alt="Banner" class="banner">
+        <div class="button-container">
+            <button onclick="window.location.href='https://test.com'">
+                Device specifications
+                <img src="https://github.com/motog34/motog34.github.io/raw/main/icon/arrow_outward.svg" alt="Arrow Icon">
+            </button>
+            <button onclick="window.location.href='https://test.com'">
+                User guide
+                <img src="https://github.com/motog34/motog34.github.io/raw/main/icon/arrow_outward.svg" alt="Arrow Icon">
+            </button>
+            <hr>
+            <button onclick="window.location.href='https://test.com'">
+                Credits
+                <img src="https://github.com/motog34/motog34.github.io/raw/main/icon/arrow_outward.svg" alt="Arrow Icon">
+            </button><br>
+        </div>
+    </div>
+</body>
+</html>
