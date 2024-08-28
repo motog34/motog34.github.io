@@ -20,9 +20,6 @@
             margin: 0;
             padding: 0;
             overflow: auto; 
-        }
-
-        body {
             font-family: 'ProductSans-Regular', sans-serif;
             background-color: #121318;
             color: #dee0ff;
@@ -39,6 +36,7 @@
             align-items: center;
             max-width: 500px; 
             width: 100%;
+            animation: fadeInDown 0.5s ease-out forwards; 
         }
 
         img.banner {
@@ -138,10 +136,25 @@
                 transform: translateY(0);
             }
         }
+
+        @keyframes fadeOutUp {
+            from {
+                opacity: 1;
+                transform: translateY(0);
+            }
+            to {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+        }
+
+        .fade-out {
+            animation: fadeOutUp 0.7s ease forwards;
+        }
     </style>
 </head>
 <body>
-    <div class="container">
+    <div class="container" id="main-container">
         <br><br><h1>Welcome to the</h1>
         <h1>Moto G34 5G</h1>
         <h1>information center</h1>
@@ -150,20 +163,35 @@
         <p>your device.</p><br>
         <img src="https://raw.githubusercontent.com/motog34/motog34.github.io/main/banner/hbanner.png" alt="Banner" class="banner">
         <div class="button-container">
-            <a href="https://test.com">
+            <a href="https://test.com" class="link">
                 Device specifications
                 <img src="https://github.com/motog34/motog34.github.io/raw/main/icon/arrow_outward.svg" alt="Arrow Icon">
             </a>
-            <a href="https://test.com">
+            <a href="https://test.com" class="link">
                 User guide
                 <img src="https://github.com/motog34/motog34.github.io/raw/main/icon/arrow_outward.svg" alt="Arrow Icon">
             </a>
             <hr>
-            <a href="https://test.com">
+            <a href="https://test.com" class="link">
                 Credits
                 <img src="https://github.com/motog34/motog34.github.io/raw/main/icon/arrow_outward.svg" alt="Arrow Icon">
             </a><br>
         </div>
     </div>
+
+    <script>
+        document.querySelectorAll('.link').forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault(); 
+
+                const container = document.getElementById('main-container');
+                container.classList.add('fade-out'); 
+
+                setTimeout(() => {
+                    window.location.href = this.href;
+                }, 1000);
+            });
+        });
+    </script>
 </body>
 </html>
