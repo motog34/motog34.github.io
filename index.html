@@ -90,32 +90,31 @@
             animation: fadeInDown 0.5s ease-out forwards 0.9s; 
         }
 
-        .button-container button {
+        .button-container a {
+            display: flex;
+            justify-content: space-between; 
+            align-items: center;
             padding: 1.25em;
             font-size: 1.05em;
             font-family: 'ProductSans-Regular', sans-serif;
-            border: none;
+            text-decoration: none;
             border-radius: 23px;
             background-color: #222c61;
             color: #bac3ff;
             cursor: pointer;
-            text-align: left; 
-            display: flex;
-            justify-content: space-between; 
-            align-items: center;
             transition: background-color 0.5s ease, transform 0.3s ease, box-shadow 0.3s ease;
-            outline: none; 
-            box-shadow: none; 
+            outline: none;
+            -webkit-tap-highlight-color: transparent;
         }
 
-        .button-container button:hover,
-        .button-container button:focus-visible {
+        .button-container a:hover,
+        .button-container a:focus-visible {
             background-color: #3245a9;
             transform: translateY(-5px); 
             box-shadow: 0 4px 8px rgba(34, 44, 97); 
         }
 
-        .button-container button img {
+        .button-container a img {
             margin-left: auto;
             filter: invert(21%) sepia(94%) saturate(642%) hue-rotate(185deg) brightness(98%) contrast(88%);
         }
@@ -151,19 +150,19 @@
         <p>your device.</p><br>
         <img src="https://raw.githubusercontent.com/motog34/motog34.github.io/main/banner/hbanner.png" alt="Banner" class="banner">
         <div class="button-container">
-            <button onclick="window.location.href='https://test.com'">
+            <a href="https://test.com">
                 Device specifications
                 <img src="https://github.com/motog34/motog34.github.io/raw/main/icon/arrow_outward.svg" alt="Arrow Icon">
-            </button>
-            <button onclick="window.location.href='https://test.com'">
+            </a>
+            <a href="https://test.com">
                 User guide
                 <img src="https://github.com/motog34/motog34.github.io/raw/main/icon/arrow_outward.svg" alt="Arrow Icon">
-            </button>
+            </a>
             <hr>
-            <button onclick="window.location.href='https://test.com'">
+            <a href="https://test.com">
                 Credits
                 <img src="https://github.com/motog34/motog34.github.io/raw/main/icon/arrow_outward.svg" alt="Arrow Icon">
-            </button><br>
+            </a><br>
         </div>
     </div>
 </body>
