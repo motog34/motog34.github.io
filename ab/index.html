@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="em">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="color-scheme" content="light">
+    <meta name="theme-color" content="#f4f4f4">
+    <title>A/B</title>
+    <style>
+        @font-face {
+            font-family: 'ProductSans-Bold';
+            src: url('https://motog34.github.io/font/Product_Bold.ttf') format('truetype');
+        }
+
+        @font-face {
+            font-family: 'ProductSans-Regular';
+            src: url('https://motog34.github.io/font/Product_Regular.ttf') format('truetype');
+        }
+
+        body { 
+            font-family: 'ProductSans-Regular', sans-serif;
+            padding: 1em;
+            word-wrap: break-word;
+            background-color: #F4F4F4;
+            color: #272426;
+        }
+        a {
+            text-decoration: none;
+            color: #B23468;
+        }
+        a:visited {
+            color: #B23468;
+        }
+        a:hover {
+            color: #B23468;
+        }
+        a:active {
+            color: #B23468;
+        }
+        .note {
+            width: auto;
+            font-size: 9pt;
+            color: #001e2e;
+        }
+        .text-card {
+            display: inline-block;
+            padding: 0.5em 1em; 
+            border-radius: 0.5em;
+            background-color: #FFD0E3;
+            color: #B23468;
+            font-size: 12pt;
+        }
+    </style>
+</head>
+<body>
+    <h1>A/B Installation Guide</h1>
+    <h2>Before you start</h2><br>
+    <p><b>1. Keep a backup of your data.</b></p>
+    <p>Make sure to keep a backup of your files as the installation will wipe your data.</p><br>
+    <p><b>2. You must come from Stock ROM.</b></p>
+    <p>Make sure you come from Stock ROM and not using other ROM before installation. If you come from other ROM, flash Stock ROM and boot it once before continuing installation.</p><br>
+    <p><b>3.</b> To obtain the required platform-tools, <a href="https://wiki.helluvaos.com/docs/installation/installing-requirements" target="_blank">Read here.</a></p><br>
+    <h1>Connect your device</h1>
+    <p><b>1. Enter Fastboot mode</b>, make sure your phone is turned off. Press and hold the Power and Volume buttons for 3 seconds until the phone turns on. You will be in Fastboot mode.</p><br>
+    <img style="border-radius: 1.7em;" src="https://www.dispositivos.pt/img/screenshot/hardreset/ap-fastboot-mode-secure-motorola-start.webp" alt="fastboot" height="400">
+    <p><b>2.</b> Once your phone is in Fastboot mode, connect your phone to a computer using a USB Cable.</p><br>
+    <p><b>3.</b> Once you have connected your phone to a computer using a USB Cable, check your phone connection to the computer by executing
+    <a class="text-card">fastboot devices</a></p><br>
+    <p><b>4.</b> Once the device shows up in fastboot devices, continue with sideloading the boot image with the following commands:</p>
+    <a class="text-card">cd {directory where you extracted the installkit files}<br>
+fastboot flash dtbo dtbo_fogos.img<br>
+fastboot flash boot boot_fogos.img<br>
+fastboot flash vendor_boot vendor_boot_fogos.img</a></p><br>
+    <h1>Install from Stock ROM</h1>
+    <p><b>1. Enter Recovery mode</b> by pressing and holding the Power and Volume up buttons for 3 seconds until the phone turns on. You will be in Recovery mode.</p><br>
+    <p><b>2.</b> Once your phone is in Recovery mode and shows “No Command”, hit the Power button; while holding it, hit the Volume + (Up) button.</p><br>
+    <img src="https://wiki.helluvaos.com/assets/images/key-combination-6f23628fc528c415004dae4dbbc5bda4.svg" alt="recovery" height="270"><br><br>
+    <p><b>3. Do a Factory Reset.</b> Use the volume buttons to move through the menu options; when “Factory Reset” is highlighted, press the Power button.</p>
+    <img src="https://raw.githubusercontent.com/motog34/motog34.github.io/refs/heads/main/ab/download.svg" alt="recovery" height="200"><br><br>
+    <p><b>4.</b> Use the volume buttons to move through the menu options; when “Install update through ADB” is highlighted, press the Power button.</p>
+    <img src="https://wiki.helluvaos.com/assets/images/adb-install-26146a3c849c149adf87d6ee1e1e8f7a.svg" alt="recovery" height="190"><br><br>
+    <p><b>4.</b> Flash the ROM through recovery with adb sideload command from your Mac/PC.</p>
+    <img src="https://wiki.helluvaos.com/assets/images/adb-sideload-window-80d2df96f50373ebe778b7216eacb811.svg" alt="recovery" height="180"><br><br>
+    <p><b>5.</b> Use the volume buttons to move through the menu options; when “Reboot to System” is highlighted, press the Power button.</p>
+    <img src="https://wiki.helluvaos.com/assets/images/reboot-system-99b1d69beab0c97bcd4f69b6b787af41.svg" alt="recovery" height="190"><br><br>
+    <h1>Sideloading Updates</h1>
+    <p><b>1. Enter Recovery mode</b> by pressing and holding the Power and Volume up buttons for 3 seconds until the phone turns on. You will be in Recovery mode.</p>
+    <p><b>2.</b> Once your phone is in Recovery mode and shows “No Command”, hit the Power button; while holding it, hit the Volume + (Up) button.</p>
+    <img src="https://wiki.helluvaos.com/assets/images/key-combination-6f23628fc528c415004dae4dbbc5bda4.svg" alt="recovery" height="270"><br><br>
+    <p><b>3.</b> Use the volume buttons to move through the menu options; when “Install update through ADB” is highlighted, press the Power button.</p>
+    <p><b>4.</b> Flash the ROM through recovery with adb sideload command from your Mac/PC.</p>
+    <img src="https://wiki.helluvaos.com/assets/images/adb-sideload-window-80d2df96f50373ebe778b7216eacb811.svg" alt="recovery" height="180"><br><br>
+    <p><b>5.</b> Use the volume buttons to move through the menu options; when “Reboot to System” is highlighted, press the Power button.</p>
+</body>
+</html>
