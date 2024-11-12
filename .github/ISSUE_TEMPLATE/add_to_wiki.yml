@@ -47,7 +47,10 @@ body:
       placeholder: 
     validations:
       required: true
-    ---
+    - type: markdown
+    attributes:
+      value: |
+        --- 
   - type: markdown
     id: text
     attributes: # Title
