@@ -1,0 +1,25 @@
+{
+  "name": "Guide",
+  "short_name": "Guide",
+  "description": "A public wiki for the Moto G34/45 5G device",
+  "start_url": "https://motog34.github.io/",
+  "background_color": "#000000",
+  "theme_color": "#ffffff",
+  "icons": [
+    {
+      "src": "path/to/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "path/to/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "display": "standalone",
+  "orientation": "portrait",
+  "scope": "/",
+  "lang": "en",
+  "prefer_related_applications": true
+}
