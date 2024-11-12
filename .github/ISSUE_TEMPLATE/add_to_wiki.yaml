@@ -44,13 +44,13 @@ body:
       required: true
 
   - type: input
-  id: photo
-  attributes:
-    label: Author profile picture
-    description: "Upload your profile picture to a service like Imgur, then paste the link here. The picture will appear next to your name in the publication."
-    placeholder: "https://"
-  validations:
-    required: false
+    id: photo
+    attributes:
+      label: Author profile picture
+      description: "Upload your profile picture to a service like Imgur, then paste the link here. The picture will appear next to your name in the publication."
+      placeholder:
+    validations:
+      required: false
 
   - type: textarea
     id: content
@@ -60,4 +60,3 @@ body:
       placeholder: "Start writing your article here..."
     validations:
       required: true
-      
