@@ -44,13 +44,13 @@ body:
       required: true
 
   - type: input
-    id: photo
-    attributes:
-      label: Author profile picture URL
-      description: You can provide a link to a profile picture that will appear next to the author name in this publication.
-      placeholder: https://
-    validations:
-      required: true
+  id: photo
+  attributes:
+    label: Author profile picture
+    description: "Upload your profile picture to a service like Imgur, then paste the link here. The picture will appear next to your name in the publication."
+    placeholder: "https://"
+  validations:
+    required: false
 
   - type: textarea
     id: content
