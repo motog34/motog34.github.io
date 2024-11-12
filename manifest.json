@@ -3,7 +3,7 @@
   "short_name": "Guide",
   "description": "A public wiki for the Moto G34/45 5G device",
   "start_url": "https://motog34.github.io/",
-  "background_color": "#000000",
+  "background_color": "#0076D9",
   "theme_color": "#ffffff",
   "icons": [
         { "src": "/assets/icon/web/favicon.ico", "type": "image/x-icon", "sizes": "16x16 32x32" },
