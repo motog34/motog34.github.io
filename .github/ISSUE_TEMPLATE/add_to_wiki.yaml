@@ -17,12 +17,14 @@ body:
       options:
         - label: I have verified that no one has published an article similar to this one.
           required: true
+
   - type: markdown
     attributes:
       value: |
         --- 
         
         # What do you want to share with us today?
+
   - type: input
     id: name
     attributes:
@@ -31,6 +33,7 @@ body:
       placeholder: 
     validations:
       required: true
+
   - type: input
     id: profile
     attributes:
@@ -39,22 +42,22 @@ body:
       placeholder: https://
     validations:
       required: true
-  - type: textarea
+
+  - type: input
     id: photo
     attributes:
-      label: Author profile picture
-      description: You can upload a custom photo to appear next to the author name in this publication. 
-      placeholder: 
+      label: Author profile picture URL
+      description: You can provide a link to a profile picture that will appear next to the author name in this publication.
+      placeholder: https://
     validations:
       required: true
-    - type: markdown
+
+  - type: textarea
+    id: content
     attributes:
-      value: |
-        --- 
-  - type: markdown
-    id: text
-    attributes: # Title
       label: Write your article
-      description: Write your article using markdown formatting, and remember to write only in English, any other language will be manually translated by a moderator before the article goes on the wiki.
+      description: Write your article using markdown formatting. Remember to write only in English; any other language will be manually translated by a moderator before the article goes on the wiki.
+      placeholder: "Start writing your article here..."
     validations:
       required: true
+      
