@@ -43,7 +43,7 @@ body:
     validations:
       required: true
 
-  - type: input
+  - type: textarea
     id: photo
     attributes:
       label: Author profile picture
