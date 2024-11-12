@@ -4,7 +4,7 @@ This repository contains a wiki/guide for users of the Moto G34/45 5G smartphone
 
 ## Contributing
 
-To contribute, you can submit files directly via commit to the repository tree. Please ensure your submissions are relevant and helpful to the community.
+To contribute, you can submit files directly via [pull requests](https://github.com/motog34/motog34.github.io/pulls) to the repository tree. Please ensure your submissions are relevant and helpful to the community.
 
 ## License
 
