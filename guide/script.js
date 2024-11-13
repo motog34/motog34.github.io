@@ -39,7 +39,7 @@ function loadPost() {
     const fileName = urlParams.get('file');
 
     if (fileName) {
-        fetch(`./posts/${fileName}.md`)
+        fetch(`./guide/posts/${fileName}.md`)
             .then(response => {
                 if (!response.ok) {
                     window.location.href = "404.html";
@@ -51,7 +51,7 @@ function loadPost() {
                 const authorInfo = extractAuthorInfo(md);
                 const postHTML = markdownToHTML(md.replace(/Info {[^}]+}/, '')); // Remove author info from markdown
                 const postContainer = document.getElementById('post-content');
-                const postDate = getFileDate(`./posts/${fileName}.md`);
+                const postDate = getFileDate(`./guide/posts/${fileName}.md`);
 
                 // Add author info to the post
                 postContainer.innerHTML = `
