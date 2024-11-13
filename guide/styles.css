@@ -1,12 +1,12 @@
 /* Custom Font Faces */
 @font-face {
     font-family: 'GoogleSansFlex';
-    src: url('./font/GoogleSansFlex-Regular.ttf') format('truetype');
+    src: url('./assets/font/GoogleSansFlex-Regular.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'FluentEmoji';
-    src: url('./font/FluentEmoji.ttf') format('truetype');
+    src: url('./assets/font/FluentEmoji.ttf') format('truetype');
 }
 
 @import url('./assets/color/light.css') (prefers-color-scheme: light);
