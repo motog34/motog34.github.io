@@ -9,6 +9,9 @@
     src: url('./font/FluentEmoji.ttf') format('truetype');
 }
 
+@import url('./assets/color/light.css') (prefers-color-scheme: light);
+@import url('./assets/color/dark.css') (prefers-color-scheme: dark);
+
 /* General Body Styles */
 body {
     font-family: 'GoogleSansFlex', 'FluentEmoji', sans-serif;
