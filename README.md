@@ -15,3 +15,4 @@ This project is licensed under the [MIT license](https://github.com/motog34/moto
 Directly involved with the project:
 - **[Dr Faizal](https://github.com/docfaizal)** Support and creation of wiki articles.
 - **[Uneike](https://github.com/Uneike)** Design UI/UX, programming and editing of wiki articles.
+- **[InoCity](https://github.com/InoCity)** Contributor in migrating articles to the Wiki.
